@@ -1,0 +1,34 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    
+}
+
+#sidenav
+{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+#sidenav h1
+{
+    
+}
+
+#sidenav nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main
+{
+    margin-left: 20%;
+}
