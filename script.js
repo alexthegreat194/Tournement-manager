@@ -53,7 +53,7 @@ $( document ).ready(function() {
             tGroup1.appendChild(tGameName);
 
             let tDescription = document.createElement("p");
-            tDescription.innerHTML = tournament.desc;
+            tDescription.innerHTML = tournament.description;
             tDescription.className = "tournament-desc";
             tGroup1.appendChild(tDescription);
 

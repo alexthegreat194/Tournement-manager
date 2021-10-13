@@ -1,0 +1,30 @@
+<div class="tournament">
+    <div class="tournament-header"></div>
+    <div class="divider"></div>
+    <div class="tournament-body">
+        <div class="tournament-group">
+            <h1 class="tournament-game-name">Street Fighter</h1>
+            <!--Game name-->
+            <p class="tournament-desc">3 sets</p>
+            <!--description-->
+        </div>
+        <div class="tournament-group">
+            <p class="tournament-prize-label">Prize:</p>
+            <!--prize label-->
+            <p class="tournament-prize-value">$250</p>
+            <!--prize value-->
+        </div>
+        <div class="tournament-group">
+            <p class="tournament-host-name">alexthegreat194</p>
+            <!--host name-->
+            <p class="tournament-date">October 28, 2021</p>
+            <!--date-->
+        </div>
+        <div class="tournament-group">
+            <button class="tournament-join-button">Join</button>
+            <!--join button-->
+            <p class="tournament-players">6/8 players remaining</p>
+            <!--players remaining-->
+        </div>
+    </div>
+</div>
