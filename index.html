@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Tournament Manager</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div id="sidenav">
-            <nav>
-                <h1>Tournament Manager</h1>
-                <a href="">Home</a>
-                <a href="">Events</a>
-                <a href="">Games</a>
-                <a href="">Friends</a>
-                <a href="">Profile</a>
-                <a href=""><button>settings</button></a>
-            </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tournament Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="sidenav">
+        <nav>
+            <h1>Tournament Manager</h1>
+            <a href="">Home</a>
+            <a href="">Events</a>
+            <a href="">Games</a>
+            <a href="">Friends</a>
+            <a href="">Profile</a>
+            <a href=""><button>settings</button></a>
+        </nav>
+    </div>
+
+    <main>
+        <!--banner for most popular game-->
+        <div>
+            <img src="" alt="popular-game">
+            <h1>Game name</h1>
         </div>
+        <!--list of available games-->
+        <div id="tournement-container">
 
-        <main>
-            <!--banner for most popular game-->
-            <div>
-                <img src="" alt="popular-game">
-                <h1>Game name</h1>
-            </div>
-            <!--list of available games-->
-            <div id="tournement-container">
-
-                <div class="tournement">
-                    <div class="tournement-header"></div>
-                    <div class="divider"></div>
-                    <div class="tournement-body">
-                        <div class="tournement-group">
-                            <h1 class="tournement-game-name">Street Fighter</h1> <!--Game name-->
-                            <p class="tournement-desc">3 sets</p> <!--description-->
-                        </div>
-                        <div class="tournement-group">
-                            <p class="tournement-prize-label">Prize:</p> <!--prize label-->
-                            <p class="tournement-prize-value">$250</p> <!--prize value-->
-                        </div>
-                        <div class="tournement-group">
-                            <p class="tournement-host-name">alexthegreat194</p> <!--host name-->
-                            <p class="tournement-date">October 28, 2021</p> <!--date-->
-                        </div>
-                        <div class="tournement-group">
-                            <button class="tournement-join-button">Join</button> <!--join button-->
-                            <p class="tournement-players">6/8 players remaining</p> <!--players remaining-->
-                        </div>
+            <div class="tournement">
+                <div class="tournement-header"></div>
+                <div class="divider"></div>
+                <div class="tournement-body">
+                    <div class="tournement-group">
+                        <h1 class="tournement-game-name">Street Fighter</h1>
+                        <!--Game name-->
+                        <p class="tournement-desc">3 sets</p>
+                        <!--description-->
+                    </div>
+                    <div class="tournement-group">
+                        <p class="tournement-prize-label">Prize:</p>
+                        <!--prize label-->
+                        <p class="tournement-prize-value">$250</p>
+                        <!--prize value-->
+                    </div>
+                    <div class="tournement-group">
+                        <p class="tournement-host-name">alexthegreat194</p>
+                        <!--host name-->
+                        <p class="tournement-date">October 28, 2021</p>
+                        <!--date-->
+                    </div>
+                    <div class="tournement-group">
+                        <button class="tournement-join-button">Join</button>
+                        <!--join button-->
+                        <p class="tournement-players">6/8 players remaining</p>
+                        <!--players remaining-->
                     </div>
                 </div>
-
             </div>
-        </main>
 
-    </body>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
