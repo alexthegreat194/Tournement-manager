@@ -1,0 +1,13 @@
+[
+    {
+        "game":"Street Fighter V",
+        "image":"street_fighter_5.jpg",
+        "color":"#FF1F00",
+        "description":"3 sets",
+        "prize":250,
+        "host":"alethegreat194",
+        "date":"October 28, 2021",
+        "joined":6,
+        "spots":8 
+    }
+]

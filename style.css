@@ -42,12 +42,12 @@ main
     margin-left: 200px;
 }
 
-.tournement-container
+.tournament-container
 {
 
 }
 
-.tournement-body
+.tournament-body
 {
     display: flex;
     flex-direction: row;
@@ -55,7 +55,7 @@ main
 }
 
 
-.tournement-header
+.tournament-header
 {
     height: 150px;
     background-image: url("images/games/street_fighter_5.jpg");
@@ -63,7 +63,7 @@ main
     background-position: center center;
 }
 
-.tournement-group
+.tournament-group
 {
     width: 50%;
 }
@@ -75,7 +75,7 @@ main
     background-color: black;
 }
 
-.tournement-prize-label
+.tournament-prize-label
 {
     color: forestgreen;
 }
