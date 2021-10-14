@@ -45,6 +45,7 @@ body
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    transition-duration: .1s;
 }
 
 #sidenav nav a:hover 
@@ -82,6 +83,12 @@ main
     align-content: flex-end;
 
     color: #FFFFFF90;
+    box-shadow: black 2px 2px 5px;
+    transition-duration: .2s;
+}
+
+.banner:hover
+{
     box-shadow: black 4px 4px 10px;
 }
 
@@ -90,6 +97,18 @@ main
     margin-top: auto;
     margin-right: 20px;
     text-align: right;
+}
+
+.banner div h1
+{
+    margin: 0;
+}
+
+.banner div h2
+{
+    font-weight: 200;
+    margin: 10px;
+    margin-bottom: 25px;
 }
 
 #tournament-container
@@ -108,6 +127,13 @@ main
     width: 350px;
     margin: 0;
     color: rgba(255, 255, 255, .5);
+    box-shadow: black 1px 1px 3px;
+    transition-duration: .2s;
+    font-weight: lighter;
+}
+
+.tournament:hover
+{
     box-shadow: black 4px 4px 10px;
 }
 
@@ -116,6 +142,7 @@ main
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: none;
     /* border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px; */
 }
@@ -144,7 +171,8 @@ main
 
 .tournament-game-name
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .tournament-prize-value
@@ -171,4 +199,33 @@ main
     border-color: rgba(87, 255, 94, 1);
     border-style: solid;
     background: linear-gradient(rgba(87, 255, 94, 1), black);
+}
+
+#host-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: black 1px 1px 3px;
+    background: linear-gradient(#00000060,00000000 50%), rgba(0,0,0,.2)
+}
+
+#host-form:hover
+{
+    box-shadow: black 4px 4px 10px;
+}
+
+#host-form label
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#host-form input
+{
+    width: 50%;
+    border-radius: 0;
+    border: none;
 }
