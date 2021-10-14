@@ -54,6 +54,11 @@ body
     background-color: white;
 }
 
+#settings-button
+{
+    background-color: rgb(30,144,255);
+}
+
 main
 {
     margin-left: 200px;
@@ -65,7 +70,9 @@ main
     margin: auto;
     width: 800px;
     
-    background-image: url("images/games/street_fighter_5.jpg");
+    background: 
+    linear-gradient(#00000050 50%, #000000FF), 
+    url("images/games/street_fighter_5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,11 +80,15 @@ main
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
+
+    color: #FFFFFF90;
+    box-shadow: black 4px 4px 10px;
 }
 
 .banner div
 {
     margin-top: auto;
+    margin-right: 20px;
     text-align: right;
 }
 
@@ -87,14 +98,17 @@ main
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 24px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .tournament
 {
-    width: 400px;
+    width: 350px;
     margin: 0;
     color: rgba(255, 255, 255, .5);
+    box-shadow: black 4px 4px 10px;
 }
 
 .tournament-body
@@ -102,8 +116,8 @@ main
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    /* border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; */
 }
 
 .tournament-header
@@ -112,8 +126,8 @@ main
     background-image: url("images/games/street_fighter_5.jpg");
     background-size: cover;
     background-position: center top;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
 }
 
 .tournament-group
@@ -130,7 +144,7 @@ main
 
 .tournament-game-name
 {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .tournament-prize-value
