@@ -1,11 +1,14 @@
 html
 {
     scroll-behavior: smooth;
+    font-family: sans-serif;
+    color: white;
 }
 
 body
 {
-    
+    background-color: #2F3640;
+    margin: 0;
 }
 
 #sidenav
@@ -13,6 +16,7 @@ body
     width: 200px;
     height: 100%;
     position: fixed;
+    background-color: #1B1A1A;
 }
 
 #sidenav h1
@@ -34,7 +38,20 @@ body
 
 #sidenav nav a 
 {
-    
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#sidenav nav a:hover 
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
 }
 
 main
@@ -42,17 +59,42 @@ main
     margin-left: 200px;
 }
 
+.banner
+{
+    height: 415px;
+    margin: auto;
+    width: 800px;
+    
+    background-image: url("images/games/street_fighter_5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.banner div
+{
+    margin-top: auto;
+    text-align: right;
+}
+
 #tournament-container
 {
     display: flex;
     flex-direction: row;
-    grid-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
 .tournament
 {
     width: 400px;
     margin: 0;
+    color: rgba(255, 255, 255, .5);
 }
 
 .tournament-body
@@ -60,15 +102,18 @@ main
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
-
 
 .tournament-header
 {
     height: 150px;
     background-image: url("images/games/street_fighter_5.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .tournament-group
@@ -91,4 +136,25 @@ main
 .tournament-prize-value
 {
     color: forestgreen;
+}
+
+.tournament-join-button
+{
+    color: black;
+    background: linear-gradient(rgba(87, 255, 94, 0.34), rgba(87, 255, 94, 1));
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    transition-duration: .2s;
+}
+
+.tournament-join-button:hover
+{
+    color: rgba(87, 255, 94, 1);
+    border-width: 2px;
+    border-color: rgba(87, 255, 94, 1);
+    border-style: solid;
+    background: linear-gradient(rgba(87, 255, 94, 1), black);
 }

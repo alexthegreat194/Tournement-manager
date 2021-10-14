@@ -23,11 +23,14 @@ $( document ).ready(function() {
 
             let tDivider = document.createElement("div");
             tDivider.className = "divider";
+            tDivider.style.backgroundColor = tournament.color;
             tBuffer.appendChild(tDivider);
 
             let tBody = document.createElement("div");
             tBody.className = "tournament-body";
-            tBuffer.appendChild(tBody)
+            tBody.style.padding = "16px"
+            tBody.style.background = `linear-gradient(${tournament.color}60,${tournament.color}00 50%), rgba(0,0,0,.2)`;
+            tBuffer.appendChild(tBody);
             
 
             let tGroup1 = document.createElement("div");
@@ -50,6 +53,7 @@ $( document ).ready(function() {
             let tGameName = document.createElement("h1");
             tGameName.innerHTML = tournament.game;
             tGameName.className = "tournament-game-name";
+            tGameName.style.color = tournament.color
             tGroup1.appendChild(tGameName);
 
             let tDescription = document.createElement("p");
@@ -83,6 +87,9 @@ $( document ).ready(function() {
             let tJoinButton = document.createElement("button");
             tJoinButton.innerHTML = "Join"
             tJoinButton.className = "tournament-join-button"
+            tJoinButton.onclick = () => {
+                alert("Joined Tournament!s")
+            }
             tGroup4.appendChild(tJoinButton);
 
             let tPlayers = document.createElement("p");

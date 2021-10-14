@@ -11,14 +11,25 @@
         "spots":8 
     },
     {
-        "game":"Street Fighter V",
-        "image":"street_fighter_5.jpg",
+        "game":"Mortal Combat",
+        "image":"mortal_combat.jpg",
+        "color":"#FFA800",
+        "description":"3 sets",
+        "prize":250,
+        "host":"phil0nator",
+        "date":"October 23, 2021",
+        "joined":4,
+        "spots":8 
+    },
+    {
+        "game":"Guilty Gear Strive",
+        "image":"guilty_gear.jpg",
         "color":"#FF1F00",
         "description":"3 sets",
         "prize":250,
-        "host":"alethegreat194",
-        "date":"October 28, 2021",
-        "joined":6,
+        "host":"phil0nator",
+        "date":"October 23, 2021",
+        "joined":4,
         "spots":8 
     }
 ]
