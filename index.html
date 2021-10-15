@@ -12,18 +12,16 @@
     <div id="sidenav">
         <nav>
             <h1>Tournament Manager</h1>
-            <a href="#">Home</a>
-            <a href="#">Events</a>
-            <a href="#">Games</a>
-            <a href="#">Friends</a>
-            <a href="#">Profile</a>
+            <a href="#banner">Home</a>
+            <a href="#tournament-container">Events</a>
+            <a href="#host-form">Host</a>
             <a href="#" id="settings-button">Settings</a>
         </nav>
     </div>
 
     <main>
         <!--banner for most popular game-->
-        <div class="banner">
+        <div id="banner" class="banner">
             <div>
                 <h1>Most Popular Game</h1>
                 <h2 id="popular-game-name">Street fighter 5</h2>
@@ -36,24 +34,40 @@
 
         <form id="host-form">
             <h1>Create Tournament</h1>
-            <label>Game</label>
-            <input type="text" id="game-input">
-            <label>Image url</label>
-            <select id="file-input">
-                <option value="guilty_gear.jpg">guilty_gear.jpg</option>
-                <option value="mortal_combat.jpg">mortal_combat.jpg</option>
-                <option value="street_fighter_5.jpg">street_fighter_5.jpg</option>
-            </select>
-            <label>Description</label>
-            <input type="text" id="desc-input">
-            <label>Color</label>
-            <input type="color" id="color-input">
-            <label>Prize Money</label>
-            <input type="number" id="money-input">
-            <label>Date</label>
-            <input type="date" id="date-input">
-            <label>Players</label>
-            <input type="number" id="players-input">
+            <div id="form-inputs">
+                <div>
+                    <label>Game</label>
+                    <input type="text" id="game-input">
+                </div>
+                <div>
+                    <label>Image</label>
+                    <select id="file-input">
+                        <option value="guilty_gear.jpg">guilty_gear.jpg</option>
+                        <option value="mortal_combat.jpg">mortal_combat.jpg</option>
+                        <option value="street_fighter_5.jpg">street_fighter_5.jpg</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Description</label>
+                    <input type="text" id="desc-input">
+                </div>
+                <div>
+                    <label>Color</label>
+                    <input type="color" id="color-input" style="width: 100%;">
+                </div>
+                <div>
+                    <label>Prize Money</label>
+                    <input type="number" id="money-input">
+                </div>
+               <div>
+                    <label>Date</label>
+                    <input type="date" id="date-input">
+               </div>
+                <div>
+                    <label>Players</label>
+                    <input type="number" id="players-input">
+                </div>
+            </div>
             <button id="host-submit">Submit</button>
         </form>
     </main>
